@@ -1,0 +1,42 @@
+### Variables
+@token = eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzaWQiOiIzMDk3YTlkYi1kMWFhLTQ4NjQtOGQyNS0yNGZjZWFmOGQ5MzYiLCJuYW1lIjoidXNlcjEiLCJqdGkiOiI2NmMwYTZhNC1lN2MzLTRlODgtODM5Zi0yMDBkNzRjN2RkYTAiLCJzdWIiOiIzMDk3YTlkYi1kMWFhLTQ4NjQtOGQyNS0yNGZjZWFmOGQ5MzYiLCJpc3MiOiJodHRwczovL2lkZW50aXR5LmF6dXJld2Vic2l0ZXMubmV0LyIsImF1ZCI6WyJodHRwczovL2lkZW50aXR5LmF6dXJld2Vic2l0ZXMubmV0LyIsImh0dHBzOi8vaWRlbnRpdHkuYXp1cmV3ZWJzaXRlcy5uZXQvIl0sIkFkbWluIjoiQWRtaW4iLCJTdXBlckFkbWluIjoiU3VwZXJBZG1pbiIsIm5iZiI6MTY4MjM1MDY2OSwiZXhwIjoxNjgyMzY1MDY5LCJpYXQiOjE2ODIzNTA2Njl9.nDLZY8TNkS2hn7so0yUvFNY9d5jkkn-d3lkjxw9fy1gF9ItJz9sd_Fsq2skNFushAU4RuC1FOR86aWNIfyjU9w
+
+
+### Unsecured GET
+GET https://localhost:7061/
+
+
+### Register POST
+POST https://localhost:7061/register
+Content-Type: application/json
+
+{
+    "userName": "user1",
+    "password": "password1",
+    "claims": ["Admin", "SuperAdmin"]
+}
+
+
+### Login POST
+POST https://localhost:7061/login
+Content-Type: application/json
+
+{
+    "userName": "user1",
+    "password": "password1"
+}
+
+
+### Secured GET
+GET https://localhost:7061/secured
+Authorization Bearer {{token}}
+
+
+### Secured GET
+GET https://localhost:7061/admin
+Authorization Bearer {{token}}
+
+
+### Secured GET
+GET https://localhost:7061/superadmin
+Authorization Bearer {{token}}

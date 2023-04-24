@@ -1,0 +1,104 @@
+### Variables
+@token = eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzaWQiOiIzMmY3ODY1NC05MDE4LTQzMjQtYTZmNS04MzgzNmU1MTYyOTYiLCJuYW1lIjoidXNlcjQiLCJqdGkiOiJmZDYzNjFmMy01MTcyLTRkYWQtYmEzNS05ODc2YzU4NTc4ZWIiLCJzdWIiOiIzMmY3ODY1NC05MDE4LTQzMjQtYTZmNS04MzgzNmU1MTYyOTYiLCJpc3MiOiJodHRwczovL2lkZW50aXR5LmF6dXJld2Vic2l0ZXMubmV0LyIsImF1ZCI6WyJodHRwczovL2lkZW50aXR5LmF6dXJld2Vic2l0ZXMubmV0LyIsImh0dHBzOi8vaWRlbnRpdHkuYXp1cmV3ZWJzaXRlcy5uZXQvIl0sIkFkbWluIjoiQWRtaW4iLCJTdXBlckFkbWluIjoiU3VwZXJBZG1pbiIsIm5iZiI6MTY4MjM0ODgyMCwiZXhwIjoxNjgyMzYzMjIwLCJpYXQiOjE2ODIzNDg4MjB9.FWCBVlUeHILTJd0HYgOgmxTwDkGnYC27DL6hbQ9z30zZZFHJrVfGyyHeA5c0EUyEbFpY8Yubj_WweXo1u5ZB5g
+
+
+### Unsecured GET
+GET https://localhost:7020/
+
+
+### Register POST
+POST https://localhost:7020/register
+Content-Type: application/json
+
+{
+    "userName": "user1",
+    "password": "password1"
+}
+
+
+### Login POST
+POST https://localhost:7020/login
+Content-Type: application/json
+
+{
+    "userName": "user1",
+    "password": "password1"
+}
+
+
+### Secured GET
+GET https://localhost:7020/secured
+Authorization Bearer {{token}}
+
+
+### Register POST
+POST https://localhost:7020/register
+Content-Type: application/json
+
+{
+    "userName": "user2",
+    "password": "password2",
+    "claims": ["Admin"]
+}
+
+
+### Login POST
+POST https://localhost:7020/login
+Content-Type: application/json
+
+{
+    "userName": "user2",
+    "password": "password2"
+}
+
+
+### Secured GET
+GET https://localhost:7020/admin
+Authorization Bearer {{token}}
+
+
+### Register POST
+POST https://localhost:7020/register
+Content-Type: application/json
+
+{
+    "userName": "user3",
+    "password": "password3",
+    "claims": ["SuperAdmin"]
+}
+
+
+### Login POST
+POST https://localhost:7020/login
+Content-Type: application/json
+
+{
+    "userName": "user3",
+    "password": "password3"
+}
+
+
+### Secured GET
+GET https://localhost:7020/superadmin
+Authorization Bearer {{token}}
+
+
+### Register POST
+POST https://localhost:7020/register
+Content-Type: application/json
+
+{
+    "userName": "user4",
+    "password": "password4",
+    "claims": ["Admin", "SuperAdmin"]
+}
+
+
+### Login POST
+POST https://localhost:7020/login
+Content-Type: application/json
+
+{
+    "userName": "user4",
+    "password": "password4"
+}

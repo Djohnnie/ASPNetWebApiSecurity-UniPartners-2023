@@ -1,0 +1,42 @@
+### Variables
+@token = eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0..Q-ZVPnC2_o-6UZDwpQZ5Vg.KU5rgbvGPBsQ6C6E95JEcWDdVO2JIVzs1BuuGH9ireTrMfh01cLO1CNOGhe-KmV52F0H3bHnoS1uIck1xPJzieXBGL3jFEootg84B_XzY0lLQTa88AAn79z1Fhw9BS73lROc_2UlTzoHvQ3f0hfmsq2WpsOyq3JhDJTkTuUztKUJImFeaSCFlot65kbiDy0BjLh00mi2iktrXS7oxuEIdYCDoCInahu4OGPga9esVvjZu-MD4AT7OvLi7_Wr8pCdViz2SKhPAzWBK_TzibP3fysLT1HkOaQoIXNS3iiS2TyogikdHnXnCFYKo5tbPkcei7TqovcLS31_422HztrSJ7hG8DHiHSgoj--_SLnKSeCglwpcqpB3zxwzHUMRft3lmR7LuNDMlUmtCQL36wlqiBIRQj9Y4QIZ1B16LfNF5yOapsml2_aIdaS_8SQD3qWl6gQSP3h52FYE9L-gm61OylMm-cH75u5ITstze_6rFNYju-Ge8Yz9aDDIx1N9xBq7NSdrpiu9woMgcm89rg3zAO6i10JJpgIR-4q8WQTIroQ3tyYQF2o8gNvW7zK8OdlyMFrNbOHCQyjsOPnABa0HkqJBHzTTNlm66BLAQEp1CO7JxY073N6rpwg0zfxf8Z29Nf9NKYvu0BpyB_77b7Hl3T-3PM3qilmEbRpbGuJrxBqsMqOZmwWjC7LqTZGLUoBUtzAOftuPI8pM4Kv9ZEmhbaFldxP02abJN1MDVhKao-RU4GKgta0tAEvvA6jLfInJhvzeVjzVrRY75Hb-aDlvh3hMs0rtH23qij5AdOt6k3hhh-eI5zoENL9ByUfLb00Y.WyDcZu63-J6saFIvQiY6MdWPSK9-mZXHaWEhnP7nHKI
+
+
+### Unsecured GET
+GET https://localhost:7269/
+
+
+### Register POST
+POST https://localhost:7269/register
+Content-Type: application/json
+
+{
+    "userName": "user1",
+    "password": "password1",
+    "claims": ["Admin", "SuperAdmin"]
+}
+
+
+### Login POST
+POST https://localhost:7269/login
+Content-Type: application/json
+
+{
+    "userName": "user1",
+    "password": "password1"
+}
+
+
+### Secured GET
+GET https://localhost:7269/secured
+Authorization Bearer {{token}}
+
+
+### Secured GET
+GET https://localhost:7269/admin
+Authorization Bearer {{token}}
+
+
+### Secured GET
+GET https://localhost:7269/superadmin
+Authorization Bearer {{token}}

@@ -1,0 +1,57 @@
+### Variables
+@token = eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzaWQiOiIyMjRmY2NiMS0yZWNhLTRhMzItOWZjMC0wODRmNzg2NjJhMTIiLCJuYW1lIjoidXNlcjEiLCJqdGkiOiIwMDQ3MzJiMC1jNDU1LTRhNjEtODc1Yy1mNzQ3YmRhZmQxNGIiLCJzdWIiOiIyMjRmY2NiMS0yZWNhLTRhMzItOWZjMC0wODRmNzg2NjJhMTIiLCJpc3MiOiJodHRwczovL2lkZW50aXR5LmF6dXJld2Vic2l0ZXMubmV0LyIsImF1ZCI6WyJodHRwczovL2lkZW50aXR5LmF6dXJld2Vic2l0ZXMubmV0LyIsImh0dHBzOi8vaWRlbnRpdHkuYXp1cmV3ZWJzaXRlcy5uZXQvIl0sIkFkbWluIjoiQWRtaW4iLCJTdXBlckFkbWluIjoiU3VwZXJBZG1pbiIsIm5iZiI6MTY4MjM1NDg5NywiZXhwIjoxNjgyMzY5Mjk3LCJpYXQiOjE2ODIzNTQ4OTd9.JSzB3fcgnZzka0JKHFc5nmhgQvNYu9BTEMLSF_ae2iLM5YQ92tn7WTUpsrLpuIewfTZqVAqbtWpFjTaoVYijqg
+@refresh = 9gPwl8erKN+JuPC2RaXcsVvZrivUcdPB4sTREA2JrjQ=
+
+### Unsecured GET
+GET https://localhost:7029/
+
+
+### Register POST
+POST https://localhost:7029/register
+Content-Type: application/json
+
+{
+    "userName": "user1",
+    "password": "password1",
+    "claims": ["Admin", "SuperAdmin"]
+}
+
+
+### Login POST
+POST https://localhost:7029/login
+Content-Type: application/json
+
+{
+    "userName": "user1",
+    "password": "password1"
+}
+
+
+### Secured GET
+GET https://localhost:7029/secured
+Authorization Bearer {{token}}
+
+
+### Secured GET
+GET https://localhost:7029/admin
+Authorization Bearer {{token}}
+
+
+### Secured GET
+GET https://localhost:7029/superadmin
+Authorization Bearer {{token}}
+
+
+### Refresh POST
+POST https://localhost:7029/refresh
+Content-Type: application/json
+
+{
+    "token": "{{token}}",
+    "refreshToken": "{{refresh}}"
+}
+
+
+### Secured GET
+POST https://localhost:7029/revoke
+Authorization Bearer {{token}}

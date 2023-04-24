@@ -1,0 +1,16 @@
+### Unsecured GET
+GET https://localhost:7064/
+
+
+### Register POST
+POST https://localhost:7064/register
+Content-Type: application/json
+
+{
+    "userName": "user1",
+    "password": "password1"
+}
+
+### Secured GET
+GET https://localhost:7064/secured
+Authorization Basic dXNlcjE6cGFzc3dvcmQx

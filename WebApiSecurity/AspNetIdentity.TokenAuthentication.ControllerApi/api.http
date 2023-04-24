@@ -1,0 +1,30 @@
+### Variables
+@token = eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzaWQiOiJmODMzMTZhNS1hYTk2LTQ4YTQtODQ0MC05MjZhOGNkZjc1ZTIiLCJuYW1lIjoidXNlcjEiLCJqdGkiOiJiOWIzZThmOC0wZWM4LTQ4OGMtYjM4MS1jY2Y4ZjEzNTAxOTkiLCJzdWIiOiJmODMzMTZhNS1hYTk2LTQ4YTQtODQ0MC05MjZhOGNkZjc1ZTIiLCJpc3MiOiJodHRwczovL2lkZW50aXR5LmF6dXJld2Vic2l0ZXMubmV0LyIsImF1ZCI6WyJodHRwczovL2lkZW50aXR5LmF6dXJld2Vic2l0ZXMubmV0LyIsImh0dHBzOi8vaWRlbnRpdHkuYXp1cmV3ZWJzaXRlcy5uZXQvIl0sIm5iZiI6MTY4MjM0Njc2MCwiZXhwIjoxNjgyMzYxMTYwLCJpYXQiOjE2ODIzNDY3NjB9.SYL72mtwMlzc7U8TnEBmi0hqutRrG0s6A4UlmHW8JT0nkylYigiRnr7910ymB0ksCMW5NUxj2d05LAaZ848SNw
+
+### Unsecured GET
+GET https://localhost:7266/
+
+
+### Register POST
+POST https://localhost:7266/register
+Content-Type: application/json
+
+{
+    "userName": "user1",
+    "password": "password1"
+}
+
+
+### Login
+POST https://localhost:7266/login
+Content-Type: application/json
+
+{
+    "userName": "user1",
+    "password": "password1"
+}
+
+
+### Secured GET
+GET https://localhost:7266/secured
+Authorization Bearer {{token}}

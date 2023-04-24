@@ -1,0 +1,103 @@
+### Variables
+@token = eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzaWQiOiI2OGEyM2NjZS04YTg2LTRjMGEtYWJmNC02NjY2NjJlYjE1MTEiLCJuYW1lIjoidXNlcjEiLCJqdGkiOiI2ZTliYjI2ZS05MDljLTQyMjctOTY0Yi01OTZkODY5MTdmZDAiLCJzdWIiOiI2OGEyM2NjZS04YTg2LTRjMGEtYWJmNC02NjY2NjJlYjE1MTEiLCJpc3MiOiJodHRwczovL2lkZW50aXR5LmF6dXJld2Vic2l0ZXMubmV0LyIsImF1ZCI6WyJodHRwczovL2lkZW50aXR5LmF6dXJld2Vic2l0ZXMubmV0LyIsImh0dHBzOi8vaWRlbnRpdHkuYXp1cmV3ZWJzaXRlcy5uZXQvIl0sIm5iZiI6MTY4MjM1MDMwNiwiZXhwIjoxNjgyMzY0NzA2LCJpYXQiOjE2ODIzNTAzMDZ9.OND1nTLnc2JPgKhkaffe7DXJ8Wt-5fQ-TYi4B2SbA0wecAtkDPLYWInUTpSztsKP1mkfHF-Hrn8cDlaDJ1sEzg
+
+### Unsecured GET
+GET https://localhost:7206/
+
+
+### Register POST
+POST https://localhost:7206/register
+Content-Type: application/json
+
+{
+    "userName": "user1",
+    "password": "password1"
+}
+
+
+### Login POST
+POST https://localhost:7206/login
+Content-Type: application/json
+
+{
+    "userName": "user1",
+    "password": "password1"
+}
+
+
+### Secured GET
+GET https://localhost:7206/secured
+Authorization Bearer {{token}}
+
+
+### Register POST
+POST https://localhost:7206/register
+Content-Type: application/json
+
+{
+    "userName": "user2",
+    "password": "password2",
+    "claims": ["Admin"]
+}
+
+
+### Login POST
+POST https://localhost:7206/login
+Content-Type: application/json
+
+{
+    "userName": "user2",
+    "password": "password2"
+}
+
+
+### Secured GET
+GET https://localhost:7206/admin
+Authorization Bearer {{token}}
+
+
+### Register POST
+POST https://localhost:7206/register
+Content-Type: application/json
+
+{
+    "userName": "user3",
+    "password": "password3",
+    "claims": ["SuperAdmin"]
+}
+
+
+### Login POST
+POST https://localhost:7206/login
+Content-Type: application/json
+
+{
+    "userName": "user3",
+    "password": "password3"
+}
+
+
+### Secured GET
+GET https://localhost:7206/superadmin
+Authorization Bearer {{token}}
+
+
+### Register POST
+POST https://localhost:7206/register
+Content-Type: application/json
+
+{
+    "userName": "user4",
+    "password": "password4",
+    "claims": ["Admin", "SuperAdmin"]
+}
+
+
+### Login POST
+POST https://localhost:7206/login
+Content-Type: application/json
+
+{
+    "userName": "user4",
+    "password": "password4"
+}

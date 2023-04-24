@@ -1,0 +1,128 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. ASP.NET Identity (Basic Authentication)", "01. ASP.NET Identity (Basic Authentication)", "{D28A61A5-E6CA-47EE-843C-44D8A8F4FC52}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.Common", "AspNetIdentity.Common\AspNetIdentity.Common.csproj", "{BA7A7870-BB2F-479F-9125-71B779AF3439}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. Microsoft", "10. Microsoft", "{0E0CBB48-573C-408E-A939-4496E254730E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20. Microsoft Account", "20. Microsoft Account", "{E2689608-2786-4C58-9AB2-275AD04B95D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30. Google", "30. Google", "{55C48DA2-762F-4C28-9207-F905015C8D50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40. Facebook", "40. Facebook", "{F3AC3A69-6B6E-4EFD-8838-C5E89C2A608E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50. Twitter", "50. Twitter", "{BA53B41D-0D31-49A7-B1E6-23310E5EEB93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "60. Auth0", "60. Auth0", "{1C6A49A3-E871-49F4-812F-7ED16A71EE03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "70. IdentityServer", "70. IdentityServer", "{05CFF586-4CB9-4CF5-9941-AA4052594783}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "80. OpenId Connect", "80. OpenId Connect", "{E6130C81-0CE0-4BB4-AB6E-4988D10195EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "90. eId", "90. eId", "{064A8011-62CC-4755-A192-CEC0BF95DA43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. Common", "00. Common", "{714BF108-B61D-4032-8C60-EDB989AF620B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. ASP.NET Identity (Token Authentication)", "02. ASP.NET Identity (Token Authentication)", "{E4A98CCA-B466-4E3F-8656-A97077F45ED5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. ASP.NET Identity (Claims Based Authorization)", "03. ASP.NET Identity (Claims Based Authorization)", "{6F88D48B-51AA-457E-A21E-C8404345FE01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. ASP.NET Identity (Encrypted Token)", "04. ASP.NET Identity (Encrypted Token)", "{AD3DBE29-A9C4-49BA-8108-7BFE2E9BD355}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. ASP.NET Identity (Refresh Tokens)", "05. ASP.NET Identity (Refresh Tokens)", "{A5F19B50-06AC-4908-816A-0A7C2EB3BDFA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.BasicAuthentication.ControllerApi", "AspNetIdentity.BasicAuthentication.ControllerApi\AspNetIdentity.BasicAuthentication.ControllerApi.csproj", "{4E28000C-D2B2-467C-B1ED-872FC0389DEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.BasicAuthentication.MinimalApi", "AspNetIdentity.BasicAuthentication.MinimalApi\AspNetIdentity.BasicAuthentication.MinimalApi.csproj", "{768B1A56-3456-49B2-93EB-0C087921AA40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.TokenAuthentication.MinimalApi", "AspNetIdentity.TokenAuthentication.MinimalApi\AspNetIdentity.TokenAuthentication.MinimalApi.csproj", "{8AB16FFC-F08A-49CC-BEE6-1AA96F5C0E59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.TokenAuthentication.ControllerApi", "AspNetIdentity.TokenAuthentication.ControllerApi\AspNetIdentity.TokenAuthentication.ControllerApi.csproj", "{64DB5285-103F-448A-8275-30F961C9C045}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.ClaimsBasedAuthorization.MinimalApi", "AspNetIdentity.ClaimsBasedAuthorization.MinimalApi\AspNetIdentity.ClaimsBasedAuthorization.MinimalApi.csproj", "{AC3D4B32-D8DD-4B19-AA4B-EE774CCB1A70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.ClaimsBasedAuthorization.ControllerApi", "AspNetIdentity.ClaimsBasedAuthorization.ControllerApi\AspNetIdentity.ClaimsBasedAuthorization.ControllerApi.csproj", "{580DFC57-386A-405C-B3E9-EF2CC2FC4E82}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.EncryptedToken.MinimalApi", "AspNetIdentity.EncryptedToken.MinimalApi\AspNetIdentity.EncryptedToken.MinimalApi.csproj", "{D0F0EA16-03B1-4C3F-A4F8-B87F41217D73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.EncryptedToken.ControllerApi", "AspNetIdentity.EncryptedToken.ControllerApi\AspNetIdentity.EncryptedToken.ControllerApi.csproj", "{3BE4CE5A-F7C1-4143-82F0-C0453292F39E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.RefreshTokens.ControllerApi", "AspNetIdentity.RefreshTokens.ControllerApi\AspNetIdentity.RefreshTokens.ControllerApi.csproj", "{6B469717-B458-41DE-8338-A3D5530DA075}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.RefreshTokens.MinimalApi", "AspNetIdentity.RefreshTokens.MinimalApi\AspNetIdentity.RefreshTokens.MinimalApi.csproj", "{965A907D-0148-44A4-BB30-4066E7C4DD51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA7A7870-BB2F-479F-9125-71B779AF3439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA7A7870-BB2F-479F-9125-71B779AF3439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA7A7870-BB2F-479F-9125-71B779AF3439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA7A7870-BB2F-479F-9125-71B779AF3439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E28000C-D2B2-467C-B1ED-872FC0389DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E28000C-D2B2-467C-B1ED-872FC0389DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E28000C-D2B2-467C-B1ED-872FC0389DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E28000C-D2B2-467C-B1ED-872FC0389DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{768B1A56-3456-49B2-93EB-0C087921AA40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768B1A56-3456-49B2-93EB-0C087921AA40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768B1A56-3456-49B2-93EB-0C087921AA40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768B1A56-3456-49B2-93EB-0C087921AA40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AB16FFC-F08A-49CC-BEE6-1AA96F5C0E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB16FFC-F08A-49CC-BEE6-1AA96F5C0E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AB16FFC-F08A-49CC-BEE6-1AA96F5C0E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AB16FFC-F08A-49CC-BEE6-1AA96F5C0E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64DB5285-103F-448A-8275-30F961C9C045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64DB5285-103F-448A-8275-30F961C9C045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64DB5285-103F-448A-8275-30F961C9C045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64DB5285-103F-448A-8275-30F961C9C045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC3D4B32-D8DD-4B19-AA4B-EE774CCB1A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC3D4B32-D8DD-4B19-AA4B-EE774CCB1A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC3D4B32-D8DD-4B19-AA4B-EE774CCB1A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC3D4B32-D8DD-4B19-AA4B-EE774CCB1A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{580DFC57-386A-405C-B3E9-EF2CC2FC4E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{580DFC57-386A-405C-B3E9-EF2CC2FC4E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{580DFC57-386A-405C-B3E9-EF2CC2FC4E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{580DFC57-386A-405C-B3E9-EF2CC2FC4E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0F0EA16-03B1-4C3F-A4F8-B87F41217D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0F0EA16-03B1-4C3F-A4F8-B87F41217D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0F0EA16-03B1-4C3F-A4F8-B87F41217D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0F0EA16-03B1-4C3F-A4F8-B87F41217D73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE4CE5A-F7C1-4143-82F0-C0453292F39E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE4CE5A-F7C1-4143-82F0-C0453292F39E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE4CE5A-F7C1-4143-82F0-C0453292F39E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE4CE5A-F7C1-4143-82F0-C0453292F39E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B469717-B458-41DE-8338-A3D5530DA075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B469717-B458-41DE-8338-A3D5530DA075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B469717-B458-41DE-8338-A3D5530DA075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B469717-B458-41DE-8338-A3D5530DA075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965A907D-0148-44A4-BB30-4066E7C4DD51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965A907D-0148-44A4-BB30-4066E7C4DD51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965A907D-0148-44A4-BB30-4066E7C4DD51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965A907D-0148-44A4-BB30-4066E7C4DD51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA7A7870-BB2F-479F-9125-71B779AF3439} = {714BF108-B61D-4032-8C60-EDB989AF620B}
+		{4E28000C-D2B2-467C-B1ED-872FC0389DEB} = {D28A61A5-E6CA-47EE-843C-44D8A8F4FC52}
+		{768B1A56-3456-49B2-93EB-0C087921AA40} = {D28A61A5-E6CA-47EE-843C-44D8A8F4FC52}
+		{8AB16FFC-F08A-49CC-BEE6-1AA96F5C0E59} = {E4A98CCA-B466-4E3F-8656-A97077F45ED5}
+		{64DB5285-103F-448A-8275-30F961C9C045} = {E4A98CCA-B466-4E3F-8656-A97077F45ED5}
+		{AC3D4B32-D8DD-4B19-AA4B-EE774CCB1A70} = {6F88D48B-51AA-457E-A21E-C8404345FE01}
+		{580DFC57-386A-405C-B3E9-EF2CC2FC4E82} = {6F88D48B-51AA-457E-A21E-C8404345FE01}
+		{D0F0EA16-03B1-4C3F-A4F8-B87F41217D73} = {AD3DBE29-A9C4-49BA-8108-7BFE2E9BD355}
+		{3BE4CE5A-F7C1-4143-82F0-C0453292F39E} = {AD3DBE29-A9C4-49BA-8108-7BFE2E9BD355}
+		{6B469717-B458-41DE-8338-A3D5530DA075} = {A5F19B50-06AC-4908-816A-0A7C2EB3BDFA}
+		{965A907D-0148-44A4-BB30-4066E7C4DD51} = {A5F19B50-06AC-4908-816A-0A7C2EB3BDFA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A9D8F69-457D-4618-88B2-DFB77BA690A6}
+	EndGlobalSection
+EndGlobal
