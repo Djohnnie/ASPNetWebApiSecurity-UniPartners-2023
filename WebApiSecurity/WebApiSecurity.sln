@@ -7,24 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. ASP.NET Identity (Basic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.Common", "AspNetIdentity.Common\AspNetIdentity.Common.csproj", "{BA7A7870-BB2F-479F-9125-71B779AF3439}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. Microsoft", "10. Microsoft", "{0E0CBB48-573C-408E-A939-4496E254730E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20. Microsoft Account", "20. Microsoft Account", "{E2689608-2786-4C58-9AB2-275AD04B95D8}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30. Google", "30. Google", "{55C48DA2-762F-4C28-9207-F905015C8D50}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40. Facebook", "40. Facebook", "{F3AC3A69-6B6E-4EFD-8838-C5E89C2A608E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50. Twitter", "50. Twitter", "{BA53B41D-0D31-49A7-B1E6-23310E5EEB93}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "60. Auth0", "60. Auth0", "{1C6A49A3-E871-49F4-812F-7ED16A71EE03}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "70. IdentityServer", "70. IdentityServer", "{05CFF586-4CB9-4CF5-9941-AA4052594783}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "80. OpenId Connect", "80. OpenId Connect", "{E6130C81-0CE0-4BB4-AB6E-4988D10195EE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "90. eId", "90. eId", "{064A8011-62CC-4755-A192-CEC0BF95DA43}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. Common", "00. Common", "{714BF108-B61D-4032-8C60-EDB989AF620B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. ASP.NET Identity (Token Authentication)", "02. ASP.NET Identity (Token Authentication)", "{E4A98CCA-B466-4E3F-8656-A97077F45ED5}"
@@ -54,6 +36,30 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.RefreshTokens.ControllerApi", "AspNetIdentity.RefreshTokens.ControllerApi\AspNetIdentity.RefreshTokens.ControllerApi.csproj", "{6B469717-B458-41DE-8338-A3D5530DA075}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetIdentity.RefreshTokens.MinimalApi", "AspNetIdentity.RefreshTokens.MinimalApi\AspNetIdentity.RefreshTokens.MinimalApi.csproj", "{965A907D-0148-44A4-BB30-4066E7C4DD51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. Microsoft Identity", "06. Microsoft Identity", "{8E95C322-1A8C-4D03-955C-EF965776FCC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07. Auth0 Identity (OAuth 2.0 Implicit Flow)", "07. Auth0 Identity (OAuth 2.0 Implicit Flow)", "{6FBC33D1-1C5D-45FB-9A8F-A3CD4E71F402}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. Auth0 Identity (OAuth 2.0 Authorization Code Flow)", "08. Auth0 Identity (OAuth 2.0 Authorization Code Flow)", "{35A5748A-C54C-4C68-B8A2-2594906A2F43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09. Auth0 Identity (OAuth 2.0 Client Credentials Flow)", "09. Auth0 Identity (OAuth 2.0 Client Credentials Flow)", "{482B5852-725F-434B-B0E0-1820FCAC03D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. Auth0 Identity (Claims Based Authorization)", "10. Auth0 Identity (Claims Based Authorization)", "{2D388054-5859-4194-AB7C-283C670A682E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11. ASP.NET WebApi and eID", "11. ASP.NET WebApi and eID", "{D128F6E6-990C-40F1-8F39-CCF3D584B57D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosoftIdentity", "MicrosoftIdentity\MicrosoftIdentity.csproj", "{76CD0FD3-7300-4E93-BF22-223BE00FB1B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetWebApiWithEid", "AspNetWebApiWithEid\AspNetWebApiWithEid.csproj", "{F002C278-EBF9-4A72-AE5B-F65B437BC145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth0Identity.ImplicitFlow", "Auth0Identity.ImplicitFlow\Auth0Identity.ImplicitFlow.csproj", "{AC1077EE-03FD-4DB0-B1D3-58A4751203ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth0Identity.AuthorizationCodeFlow", "Auth0Identity.AuthorizationCodeFlow\Auth0Identity.AuthorizationCodeFlow.csproj", "{3C38A19B-DCA5-4E4B-A095-2CC45E05F159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth0Identity.ClientCredentialsFlow", "Auth0Identity.ClientCredentialsFlow\Auth0Identity.ClientCredentialsFlow.csproj", "{60A52A4A-C7A2-4936-A8DA-D6238F9857FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth0Identity.ClaimsBasedAuthorization", "Auth0Identity.ClaimsBasedAuthorization\Auth0Identity.ClaimsBasedAuthorization.csproj", "{E970FBF2-EBF8-4612-BD18-89B1C8210412}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +111,30 @@ Global
 		{965A907D-0148-44A4-BB30-4066E7C4DD51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{965A907D-0148-44A4-BB30-4066E7C4DD51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{965A907D-0148-44A4-BB30-4066E7C4DD51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76CD0FD3-7300-4E93-BF22-223BE00FB1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76CD0FD3-7300-4E93-BF22-223BE00FB1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76CD0FD3-7300-4E93-BF22-223BE00FB1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76CD0FD3-7300-4E93-BF22-223BE00FB1B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F002C278-EBF9-4A72-AE5B-F65B437BC145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F002C278-EBF9-4A72-AE5B-F65B437BC145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F002C278-EBF9-4A72-AE5B-F65B437BC145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F002C278-EBF9-4A72-AE5B-F65B437BC145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC1077EE-03FD-4DB0-B1D3-58A4751203ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC1077EE-03FD-4DB0-B1D3-58A4751203ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC1077EE-03FD-4DB0-B1D3-58A4751203ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC1077EE-03FD-4DB0-B1D3-58A4751203ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C38A19B-DCA5-4E4B-A095-2CC45E05F159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C38A19B-DCA5-4E4B-A095-2CC45E05F159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C38A19B-DCA5-4E4B-A095-2CC45E05F159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C38A19B-DCA5-4E4B-A095-2CC45E05F159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60A52A4A-C7A2-4936-A8DA-D6238F9857FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A52A4A-C7A2-4936-A8DA-D6238F9857FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A52A4A-C7A2-4936-A8DA-D6238F9857FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A52A4A-C7A2-4936-A8DA-D6238F9857FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E970FBF2-EBF8-4612-BD18-89B1C8210412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E970FBF2-EBF8-4612-BD18-89B1C8210412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E970FBF2-EBF8-4612-BD18-89B1C8210412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E970FBF2-EBF8-4612-BD18-89B1C8210412}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -121,6 +151,12 @@ Global
 		{3BE4CE5A-F7C1-4143-82F0-C0453292F39E} = {AD3DBE29-A9C4-49BA-8108-7BFE2E9BD355}
 		{6B469717-B458-41DE-8338-A3D5530DA075} = {A5F19B50-06AC-4908-816A-0A7C2EB3BDFA}
 		{965A907D-0148-44A4-BB30-4066E7C4DD51} = {A5F19B50-06AC-4908-816A-0A7C2EB3BDFA}
+		{76CD0FD3-7300-4E93-BF22-223BE00FB1B3} = {8E95C322-1A8C-4D03-955C-EF965776FCC2}
+		{F002C278-EBF9-4A72-AE5B-F65B437BC145} = {D128F6E6-990C-40F1-8F39-CCF3D584B57D}
+		{AC1077EE-03FD-4DB0-B1D3-58A4751203ED} = {6FBC33D1-1C5D-45FB-9A8F-A3CD4E71F402}
+		{3C38A19B-DCA5-4E4B-A095-2CC45E05F159} = {35A5748A-C54C-4C68-B8A2-2594906A2F43}
+		{60A52A4A-C7A2-4936-A8DA-D6238F9857FE} = {482B5852-725F-434B-B0E0-1820FCAC03D7}
+		{E970FBF2-EBF8-4612-BD18-89B1C8210412} = {2D388054-5859-4194-AB7C-283C670A682E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6A9D8F69-457D-4618-88B2-DFB77BA690A6}

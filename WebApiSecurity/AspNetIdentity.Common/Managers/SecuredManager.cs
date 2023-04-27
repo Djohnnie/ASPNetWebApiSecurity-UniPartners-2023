@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Microsoft.IdentityModel.JsonWebTokens;
 
 namespace AspNetIdentity.Common.Managers;
 
@@ -29,6 +28,7 @@ public class SecuredManager
 
     private string GetUserName()
     {
-        return _httpContextAccessor.HttpContext?.User.Identity.Name ?? "Unknown";
+        return _httpContextAccessor.HttpContext?.User.Identity.Name ??
+            _httpContextAccessor.HttpContext?.User.Claims.SingleOrDefault(x=>x.Type == "name")?.Value ?? "Unknown";
     }
 }
